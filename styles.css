@@ -1,0 +1,598 @@
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+                
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-banner-container {
+    background-image: linear-gradient(to bottom right, #4c2d90, #000000);
+  }
+
+  header {
+    background-color: transparent;
+    padding: 20px 0;
+  }
+  
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 100px;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-links li {
+    margin-left: 15px;
+  }
+  
+  .nav-links a {
+    font-family: 'Lemon/Milk', sans-serif;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 24px;
+  }
+  
+  .nav-links a:hover {
+    color: #ccc;
+  }
+
+  .neon-link {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    transition: text-shadow 0.3s ease-in-out;
+  }
+  
+  .neon-link:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  }
+  
+
+  .banner {
+    background-color: transparent;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+
+.banner-content {
+  position: relative;
+  text-align: left;
+  color: #e7e7e7;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
+  flex-wrap: wrap;
+}
+
+.banner-text {
+  max-width: 50%;
+  flex: 1;
+}
+
+.banner h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  font-family: 'Lemon/Milk', sans-serif;
+  line-height: 1.2;
+}
+
+.flicker {
+  color: #f04e23;
+  font-size: 72px;
+  font-family: 'Lemon/Milk', sans-serif;
+  animation: flickerAnimation 5s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.2;
+  }
+}
+
+spline-viewer {
+  width: 100%;
+  height: 50vh; 
+  margin-top: 20px;
+  flex: 1;
+}
+
+.cta-button {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f04e23, #8e3aff);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.cta-button:hover {
+  background-image: linear-gradient(to right, #c9411e, #6c2cc4);
+}
+
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+}
+
+.neon:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  }
+}
+
+
+
+
+
+.about-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("Imagenes/About_us.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.about-us-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 55px;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: #e7e7e7;
+  z-index: 1;
+  margin-top: 4rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), -1px -1px 3px rgba(0, 0, 0, 0.7),
+               1px -1px 3px rgba(0, 0, 0, 0.7), -1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  margin-top: 3rem;
+}
+
+
+.about-us-text {
+  flex: 1;
+  padding-right: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem; 
+}
+
+.about-us-text p {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 32px;
+  color: #e7e7e7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), -1px -1px 3px rgba(0, 0, 0, 0.7),
+               1px -1px 3px rgba(0, 0, 0, 0.7), -1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.services {
+  padding: 2rem 0;
+  background-image: linear-gradient(to bottom, #4c2d90, #000000);
+}
+
+.services-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.service img {
+  width: 100%;
+  height: 250px;
+}
+
+.service-content {
+  background-color: #30275c;
+  padding: 1rem;
+  text-align: center;
+}
+
+.service-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.pricing {
+  padding: 9rem 0;
+  background-color: #000;
+}
+
+.pricing-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 55px;
+  color: #e7e7e7;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.question-container, .price-container {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background: #111;
+  border: none;
+  color: #fff;
+  text-shadow: none;
+  box-shadow: none;
+  transition: text-shadow 2s, box-shadow 2s;
+}
+
+.input-active {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  transition: text-shadow 2s, box-shadow 2s;
+}
+
+.input-box-active {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  transition: text-shadow 2s, box-shadow 2s;
+}
+
+.total-price {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.subscribe-button {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #8e3aff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #6b27d4;
+}
+
+
+
+
+
+.team {
+  padding: 12rem 0 2rem;
+  background-image: linear-gradient(to top, #4c2d90, #000000);
+}
+
+.team-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 55px;
+  color: #e7e7e7;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-member p {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 16px;
+  color: #e7e7e7;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+.contact {
+  padding: 2rem 0;
+  background-image: linear-gradient(to bottom, #4c2d90, #000000);
+  color: #e7e7e7;
+  font-size: 18px;
+}
+
+.contact-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 55px;
+  color: #e7e7e7;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #30275c;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: #e7e7e7;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 45px;
+  }
+}
+
+.footer {
+  background-color: #000000;
+  padding: 2rem 0;
+}
+
+.footer p {
+  font-size: 16px;
+  color: #e7e7e7;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 48px;
+  }
+
+  spline-viewer {
+    height: 30vh;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-text,
+  .about-us-image {
+    flex: auto;
+    padding-right: 0;
+  }
+
+  .about-us-text {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
+
+  .about-us-title {
+    font-size: 24px;
+  }
+
+  .services-container {
+    flex-direction: column;
+  }
+
+  .service {
+    margin-bottom: 1rem;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    }
+    
+    .nav-links {
+    flex-direction: column;
+    }
+    
+    .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+    }
+    
+    .banner {
+    height: auto;
+    }
+    
+    .banner-content {
+    flex-direction: column;
+    padding-left: 0;
+    padding: 2rem;
+    }
+    
+    .banner-text {
+    max-width: 100%;
+    }
+    
+    .banner h1 {
+    font-size: 48px;
+    }
+    
+    .flicker {
+    font-size: 48px;
+    }
+    
+    .about-us-content {
+    flex-direction: column;
+    }
+    
+    .about-us-text {
+    padding-right: 0;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    }
+    
+    .services-container {
+    flex-direction: column;
+    }
+    
+    .service {
+    margin-bottom: 2rem;
+    }
+    
+    .pricing-container {
+    flex-direction: column;
+    }
+    
+    .question-container,
+    .price-container {
+    padding: 0;
+    margin-bottom: 2rem;
+    }
+    
+    .team-container {
+    flex-direction: column;
+    }
+    
+    .team-member {
+    margin-bottom: 2rem;
+    }
+}
