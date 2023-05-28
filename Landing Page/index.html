@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.281/build/spline-viewer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+<body>
+
+
+
+
+
+  <div class="header-banner-container">
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"><img src="Imagenes\Logo.png" alt="Logo de Hato"></a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#nosotros" class="neon-link">Nosotros</a></li>
+            <li><a href="#beneficios" class="neon-link">Beneficios</a></li>
+            <li><a href="#precios" class="neon-link">Precios</a></li>
+            <li><a href="#equipo" class="neon-link">Equipo</a></li>
+            <li><a href="#contacto" class="neon-link">Contacto</a></li>
+          </ul>
+        </nav>        
+      </div>
+    </header>    
+
+
+
+
+
+    <section class="banner">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h1>Crea tu foto <span class="flicker">profesional</span> con IA<br>en minutos</h1>
+          <a href="booking.html" class="cta-button neon">Me interesa</a>
+        </div>
+          <spline-viewer loading-anim url="https://prod.spline.design/4b27ANBJxItApnxn/scene.splinecode"></spline-viewer>
+      </div>
+    </section>   
+  </div> 
+  
+
+
+
+  
+    <section class="about-us" id="nosotros">
+      <h2 class="about-us-title">Nosotros</h2>
+      <div class="about-us-content">
+        <div class="about-us-text">
+          <p>
+            PictoAi es un revolucionario sistema diseñado para impulsar la creación y edición de fotografías de alta calidad. Nuestra herramienta se enfoca en simplificar el proceso creativo, ofrecer una representación realista y vívida de distintos escenarios, y facilitar tanto la personalización de imágenes como la interacción del usuario.
+          </p>
+        </div>
+      </div>
+    </section>    
+
+
+
+
+
+<section class="services" id="beneficios">
+  <h2 class="services-title">Servicios</h2>
+  <div class="services-container">
+    <div class="service">
+      <img src="Imagenes\Principal2.png" alt="Descripción del servicio 1">
+      <div class="service-content">
+        <h3 class="service-title">Creación personalizada de fotografías</h3>
+        <p>Crea fotografías tuyas de forma ilimitada con inteligencia artificial subiendo solo 15 fotos tuyas a nuestra plataforma.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="Imagenes\Limpieza2.jpg" alt="Descripción del servicio 2">
+      <div class="service-content">
+        <h3 class="service-title">Calidad profesional</h3>
+        <p>Obten una calidad profesional desde casa sin necesidad de ir a un estudio fotográfico gracias a las mejoras visuales hechas por la IA.</p>
+      </div>
+    </div>
+    <div class="service">
+      <img src="Imagenes\Asequible.jpg" alt="Descripción del servicio 3">
+      <div class="service-content">
+        <h3 class="service-title">Solución accesible y fácil de usar</h3>
+        <p>PictoAi es una herramienta de costo eficiente y fácil de aprender, convirtiéndola en la solución ideal para la creación y edición de fotografías de alta calidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="pricing" id="precios">
+  <h1 class="pricing-title">Precios</h1>
+  <div class="pricing-container">
+    <div class="question-container">
+      <h3>¿Cuántas fotografías deseas?</h3>
+      <input type="number" id="room-count" min="0" value="0">
+    </div>
+    <div class="price-container">
+      <h3>Precios desde S/ 2.00 por fotografía</h3>
+      <div class="total-price">
+        <h2 id="price">S/ 0.00</h2>
+      </div>
+      <button class="subscribe-button neon cta-button">Subscribirse</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="team" id="equipo">
+  <h1 class="team-title">Nuestro equipo</h1>
+  <div class="team-container">
+    <div class="team-member">
+      <img src="Imagenes/Josef.jpg" alt="Josef">
+      <p>Josef</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes/Rubio.jpg" alt="Rubio">
+      <p>Rubio</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Ivan.jpg" alt="Ivan">
+      <p>Ivan</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Ronaldo.jpg" alt="Ronaldo">
+      <p>Ronald</p>
+    </div>
+    <div class="team-member">
+      <img src="Imagenes\Luciano.jpg" alt="Luciano">
+      <p>Luciano</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact" id="contacto">
+  <h1 class="contact-title">Contacto</h1>
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Mensaje</label>
+      <textarea id="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="cta-button neon">Enviar</button>
+  </form>
+  <div class="social-media">
+    <h3>Síguenos</h3>
+    <div class="social-icons">
+      <a href="#"><img src="Imagenes/facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="Imagenes/twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="Imagenes/instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+  <p>Todas las imágenes acerca del producto final y las declaraciones de funcionalidades están sujetas a cambio sin previo aviso y bajo ningún concepto son representativas del producto final. Copyright Grupo 2 UPC @PictoAi</p>
+</footer>
+
+
+
+
+
+</body>
+</html>
